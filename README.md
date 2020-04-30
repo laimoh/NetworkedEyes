@@ -1,2 +1,0 @@
-# NetworkedEyes
-Eyes
