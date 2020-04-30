@@ -2,7 +2,11 @@ let express = require('express');
 
 // create an app object with express
 const app = express();
-let server = app.listen(4000);
+const port = process.env.PORT || 4000
+let server = app.listen(port, () => {
+  console.log(`Starting server at ${port}`)
+});
+
 app.use(express.static('public'));
 
 console.log("server is all g") // test
